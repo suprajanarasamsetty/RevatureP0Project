@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Define the root logger and its level -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- Define the log format -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Define a file appender (optional) -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>app.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Define the root logger level and appenders -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+    <!-- Define specific logger levels if needed -->
+    <logger name="com.dao.ProductDAOClass" level="DEBUG" />
+    <logger name="com.dao.UserRegistrationDAOClass" level="DEBUG"/>
+    <logger name="com.dao.CartDAOClass" level="DEBUG"/>
+    <logger name="com.dao.CategoryDAOClass" level="DEBUG"/>
+    <logger name="com.dao.OrderItemDAOClass" level="DEBUG"/>
+    <logger name="com.dao.OrdersDAOClass" level="DEBUG"/>
+    <logger name="com.dao.ReviewDAOClass" level="DEBUG"/>
+    <logger name="com.dao.SellerDAOClass" level="DEBUG"/>
+    <logger name="com.dao.WishlistDAOClass" level="DEBUG"/>
+    <logger name="com.Exception" level="ERROR" />
+    <logger name="com.dto" level="INFO" />
+
+</configuration>

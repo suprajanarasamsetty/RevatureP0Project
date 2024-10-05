@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>EcommerceWeb</display-name>
+  <servlet>
+    <description></description>
+    <display-name>BuyerLoginController</display-name>
+    <servlet-name>BuyerLoginController</servlet-name>
+    <servlet-class>Controller.BuyerLoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuyerLoginController</servlet-name>
+    <url-pattern>/BuyerLoginController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SellerOrdersServlet</display-name>
+    <servlet-name>SellerOrdersServlet</servlet-name>
+    <servlet-class>Controller.SellerOrdersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SellerOrdersServlet</servlet-name>
+    <url-pattern>/SellerOrdersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CategoriesController</display-name>
+    <servlet-name>CategoriesController</servlet-name>
+    <servlet-class>Controller.CategoriesController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoriesController</servlet-name>
+    <url-pattern>/CategoriesController</url-pattern>
+  </servlet-mapping>
+</web-app>
